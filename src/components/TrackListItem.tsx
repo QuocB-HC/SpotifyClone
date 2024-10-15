@@ -1,24 +1,29 @@
-import { Text, View, StyleSheet, Image } from "react-native";
+import { Text, View, StyleSheet, Image, Pressable } from "react-native";
 import { Track } from "../types";
+import { usePlayerContext } from "../providers/PlayerProvider";
 
 type TrackListItemProps = {
   track: Track;
 };
 
-export default function TrackListItem({ track }: TrackListItemProps) {
+const TrackListItem = ({ track }: TrackListItemProps) => {
+  const image = track.album?.images?.[0];
+
+  const { setTrack } = usePlayerContext();
+
   return (
-    <View style={styles.container}>
-      <Image
-        source={{ uri: track.album.images[0]?.url }}
-        style={styles.image}
-      />
+    <Pressable
+      onPress={() => setTrack(track)}
+      style={styles.container}
+    >
+      {image && <Image source={{ uri: image.url }} style={styles.image} />}
       <View>
         <Text style={styles.title}>{track.name}</Text>
         <Text style={styles.subtitle}>{track.artists[0]?.name}</Text>
       </View>
-    </View>
+    </Pressable>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -45,3 +50,5 @@ const styles = StyleSheet.create({
     marginRight: 10,
   },
 });
+
+export default TrackListItem;
