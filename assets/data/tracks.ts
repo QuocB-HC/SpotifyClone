@@ -34,74 +34,6 @@ export const tracks: Track[] = [
     },
   },
   {
-    id: '7pYfyrMNPn3wtoCyqcTVoI',
-    name: 'Moves Like Jagger - Studio Recording From "The Voice" Performance',
-    preview_url: null,
-    artists: [
-      {
-        id: '04gDigrS5kc9YWfZHwBETP',
-        name: 'Maroon 5',
-      },
-      {
-        id: '1l7ZsJRRS8wlW3WfJfPfNS',
-        name: 'Christina Aguilera',
-      },
-    ],
-    album: {
-      id: '1snrPQMoTrBsKl73wzSxbn',
-      name: 'Hands All Over (Revised International Standard version)',
-      images: [
-        {
-          url: 'https://i.scdn.co/image/ab67616d0000b2739585ff55fff75c5c07a619cb',
-          height: 640,
-          width: 640,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d00001e029585ff55fff75c5c07a619cb',
-          height: 300,
-          width: 300,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d000048519585ff55fff75c5c07a619cb',
-          height: 64,
-          width: 64,
-        },
-      ],
-    },
-  },
-  {
-    id: '7i2DJ88J7jQ8K7zqFX2fW8',
-    name: 'Now Or Never',
-    preview_url: null,
-    artists: [
-      {
-        id: '26VFTg2z8YR0cCuwLzESi2',
-        name: 'Halsey',
-      },
-    ],
-    album: {
-      id: '7GjG91tyHQNGEHzKJaqOi0',
-      name: 'hopeless fountain kingdom (Deluxe)',
-      images: [
-        {
-          url: 'https://i.scdn.co/image/ab67616d0000b2730f7ad6d8d829906c17cae210',
-          height: 640,
-          width: 640,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d00001e020f7ad6d8d829906c17cae210',
-          height: 300,
-          width: 300,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d000048510f7ad6d8d829906c17cae210',
-          height: 64,
-          width: 64,
-        },
-      ],
-    },
-  },
-  {
     id: '4xBjsLUSjcx2h7PcRikpQp',
     name: 'OMG (feat. Quavo)',
     preview_url:
@@ -132,70 +64,6 @@ export const tracks: Track[] = [
         },
         {
           url: 'https://i.scdn.co/image/ab67616d00004851147a905ba006c3ed794f17fd',
-          height: 64,
-          width: 64,
-        },
-      ],
-    },
-  },
-  {
-    id: '2GiJYvgVaD2HtM8GqD9EgQ',
-    name: 'Electric Love',
-    preview_url: null,
-    artists: [
-      {
-        id: '1KP6TWI40m7p3QBTU6u2xo',
-        name: 'BØRNS',
-      },
-    ],
-    album: {
-      id: '17l7MIu0Jh0tdgK7or9ovw',
-      name: 'Dopamine',
-      images: [
-        {
-          url: 'https://i.scdn.co/image/ab67616d0000b273cc2cf912462d8ae4ef856434',
-          height: 640,
-          width: 640,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d00001e02cc2cf912462d8ae4ef856434',
-          height: 300,
-          width: 300,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d00004851cc2cf912462d8ae4ef856434',
-          height: 64,
-          width: 64,
-        },
-      ],
-    },
-  },
-  {
-    id: '1JCCdiru7fhstOIF4N7WJC',
-    name: 'Amnesia',
-    preview_url: null,
-    artists: [
-      {
-        id: '5Rl15oVamLq7FbSb0NNBNy',
-        name: '5 Seconds of Summer',
-      },
-    ],
-    album: {
-      id: '2LkWHNNHgD6BRNeZI2SL1L',
-      name: '5 Seconds Of Summer',
-      images: [
-        {
-          url: 'https://i.scdn.co/image/ab67616d0000b27393432e914046a003229378da',
-          height: 640,
-          width: 640,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d00001e0293432e914046a003229378da',
-          height: 300,
-          width: 300,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d0000485193432e914046a003229378da',
           height: 64,
           width: 64,
         },
@@ -270,38 +138,6 @@ export const tracks: Track[] = [
         },
         {
           url: 'https://i.scdn.co/image/ab67616d00004851e07e45a3004b996f43e65310',
-          height: 64,
-          width: 64,
-        },
-      ],
-    },
-  },
-  {
-    id: '2rbDhOo9Fh61Bbu23T2qCk',
-    name: 'Always Remember Us This Way',
-    preview_url: null,
-    artists: [
-      {
-        id: '1HY2Jd0NmPuamShAr6KMms',
-        name: 'Lady Gaga',
-      },
-    ],
-    album: {
-      id: '3edjzMAVB9RYRd4UcZBchx',
-      name: 'A Star Is Born Soundtrack (Without Dialogue)',
-      images: [
-        {
-          url: 'https://i.scdn.co/image/ab67616d0000b273b5d4b4ed17ec86c4b3944af2',
-          height: 640,
-          width: 640,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d00001e02b5d4b4ed17ec86c4b3944af2',
-          height: 300,
-          width: 300,
-        },
-        {
-          url: 'https://i.scdn.co/image/ab67616d00004851b5d4b4ed17ec86c4b3944af2',
           height: 64,
           width: 64,
         },
@@ -713,6 +549,170 @@ export const tracks: Track[] = [
         },
         {
           url: 'https://i.scdn.co/image/ab67616d000048516b5f7f452f8443896ab8347c',
+          height: 64,
+          width: 64,
+        },
+      ],
+    },
+  },
+  {
+    id: '7pYfyrMNPn3wtoCyqcTVoI',
+    name: 'Moves Like Jagger - Studio Recording From "The Voice" Performance',
+    preview_url: null,
+    artists: [
+      {
+        id: '04gDigrS5kc9YWfZHwBETP',
+        name: 'Maroon 5',
+      },
+      {
+        id: '1l7ZsJRRS8wlW3WfJfPfNS',
+        name: 'Christina Aguilera',
+      },
+    ],
+    album: {
+      id: '1snrPQMoTrBsKl73wzSxbn',
+      name: 'Hands All Over (Revised International Standard version)',
+      images: [
+        {
+          url: 'https://i.scdn.co/image/ab67616d0000b2739585ff55fff75c5c07a619cb',
+          height: 640,
+          width: 640,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d00001e029585ff55fff75c5c07a619cb',
+          height: 300,
+          width: 300,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d000048519585ff55fff75c5c07a619cb',
+          height: 64,
+          width: 64,
+        },
+      ],
+    },
+  },
+  {
+    id: '7i2DJ88J7jQ8K7zqFX2fW8',
+    name: 'Now Or Never',
+    preview_url: null,
+    artists: [
+      {
+        id: '26VFTg2z8YR0cCuwLzESi2',
+        name: 'Halsey',
+      },
+    ],
+    album: {
+      id: '7GjG91tyHQNGEHzKJaqOi0',
+      name: 'hopeless fountain kingdom (Deluxe)',
+      images: [
+        {
+          url: 'https://i.scdn.co/image/ab67616d0000b2730f7ad6d8d829906c17cae210',
+          height: 640,
+          width: 640,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d00001e020f7ad6d8d829906c17cae210',
+          height: 300,
+          width: 300,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d000048510f7ad6d8d829906c17cae210',
+          height: 64,
+          width: 64,
+        },
+      ],
+    },
+  },
+  {
+    id: '2GiJYvgVaD2HtM8GqD9EgQ',
+    name: 'Electric Love',
+    preview_url: null,
+    artists: [
+      {
+        id: '1KP6TWI40m7p3QBTU6u2xo',
+        name: 'BØRNS',
+      },
+    ],
+    album: {
+      id: '17l7MIu0Jh0tdgK7or9ovw',
+      name: 'Dopamine',
+      images: [
+        {
+          url: 'https://i.scdn.co/image/ab67616d0000b273cc2cf912462d8ae4ef856434',
+          height: 640,
+          width: 640,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d00001e02cc2cf912462d8ae4ef856434',
+          height: 300,
+          width: 300,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d00004851cc2cf912462d8ae4ef856434',
+          height: 64,
+          width: 64,
+        },
+      ],
+    },
+  },
+  {
+    id: '1JCCdiru7fhstOIF4N7WJC',
+    name: 'Amnesia',
+    preview_url: null,
+    artists: [
+      {
+        id: '5Rl15oVamLq7FbSb0NNBNy',
+        name: '5 Seconds of Summer',
+      },
+    ],
+    album: {
+      id: '2LkWHNNHgD6BRNeZI2SL1L',
+      name: '5 Seconds Of Summer',
+      images: [
+        {
+          url: 'https://i.scdn.co/image/ab67616d0000b27393432e914046a003229378da',
+          height: 640,
+          width: 640,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d00001e0293432e914046a003229378da',
+          height: 300,
+          width: 300,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d0000485193432e914046a003229378da',
+          height: 64,
+          width: 64,
+        },
+      ],
+    },
+  },
+  {
+    id: '2rbDhOo9Fh61Bbu23T2qCk',
+    name: 'Always Remember Us This Way',
+    preview_url: null,
+    artists: [
+      {
+        id: '1HY2Jd0NmPuamShAr6KMms',
+        name: 'Lady Gaga',
+      },
+    ],
+    album: {
+      id: '3edjzMAVB9RYRd4UcZBchx',
+      name: 'A Star Is Born Soundtrack (Without Dialogue)',
+      images: [
+        {
+          url: 'https://i.scdn.co/image/ab67616d0000b273b5d4b4ed17ec86c4b3944af2',
+          height: 640,
+          width: 640,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d00001e02b5d4b4ed17ec86c4b3944af2',
+          height: 300,
+          width: 300,
+        },
+        {
+          url: 'https://i.scdn.co/image/ab67616d00004851b5d4b4ed17ec86c4b3944af2',
           height: 64,
           width: 64,
         },

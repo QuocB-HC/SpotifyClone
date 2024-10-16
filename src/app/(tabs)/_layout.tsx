@@ -9,6 +9,7 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import Feather from "@expo/vector-icons/Feather";
 import { BottomTabBar } from '@react-navigation/bottom-tabs';
 import Player from "@/src/components/Player";
+import Entypo from '@expo/vector-icons/Entypo';
 
 
 
@@ -46,8 +47,8 @@ export default function TabLayout() {
             <Link href="/modal" asChild>
               <Pressable>
                 {({ pressed }) => (
-                  <FontAwesome
-                    name="info-circle"
+                  <Entypo
+                    name="log-out"
                     size={25}
                     color={Colors[colorScheme ?? "light"].text}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
