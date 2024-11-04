@@ -31,6 +31,9 @@ function TabLayout() {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+        tabBarStyle: {
+          backgroundColor: "#090909",
+        },
       }}
       tabBar={(props) => (
         <View>
@@ -61,7 +64,11 @@ function TabLayout() {
               </Pressable>
             </Link>
           ),
+          headerStyle: {
+            backgroundColor: "#090909"
+          },
           headerTitleStyle: {
+            color: "white",
             fontWeight: 'bold',
           },
           headerTitleAlign: "center",
@@ -75,7 +82,11 @@ function TabLayout() {
           tabBarIcon: ({ color }) => (
             <AntDesign name="search1" size={24} color={color} />
           ),
+          headerStyle: {
+            backgroundColor: "#090909"
+          },
           headerTitleStyle: {
+            color: "white",
             fontWeight: 'bold',
           },
           headerTitleAlign: "center",
@@ -89,7 +100,11 @@ function TabLayout() {
           tabBarIcon: ({ color }) => (
             <Ionicons name="library-outline" size={24} color={color} />
           ),
+          headerStyle: {
+            backgroundColor: "#090909"
+          },
           headerTitleStyle: {
+            color: "white",
             fontWeight: 'bold',
           },
           headerTitleAlign: "center",
@@ -104,11 +119,11 @@ function Navigation() {
   return (
     <NavigationContainer independent={true}>
       <Stack.Navigator>
-        <Stack.Screen
+        {/* <Stack.Screen
           name="Login"
           component={LoginScreen}
           options={{ headerShown: false }}
-        />
+        /> */}
         <Stack.Screen
           name="Main"
           component={TabLayout}
