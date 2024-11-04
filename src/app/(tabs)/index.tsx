@@ -8,6 +8,7 @@ export default function HomeScreen() {
         data={tracks}
         renderItem={({ item }) => <TrackListItem track={item} />}
         showsVerticalScrollIndicator={false}
+        style = {{backgroundColor: "black"}}
       />
   );
 }

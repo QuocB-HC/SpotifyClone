@@ -10,6 +10,9 @@ import Feather from "@expo/vector-icons/Feather";
 import { BottomTabBar } from '@react-navigation/bottom-tabs';
 import Player from "@/src/components/Player";
 import Entypo from '@expo/vector-icons/Entypo';
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { NavigationContainer } from "@react-navigation/native";
+import LoginScreen from "../login";
 
 
 
@@ -21,7 +24,7 @@ function TabBarIcon(props: {
   return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
 }
 
-export default function TabLayout() {
+function TabLayout() {
   const colorScheme = useColorScheme();
 
   return (
@@ -35,6 +38,7 @@ export default function TabLayout() {
           <BottomTabBar {...props} />
         </View>
       )}
+       
     >
       <Tabs.Screen
         name="index"
@@ -50,13 +54,17 @@ export default function TabLayout() {
                   <Entypo
                     name="log-out"
                     size={25}
-                    color={Colors[colorScheme ?? "light"].text}
+                    color={"white"}
                     style={{ marginRight: 15, opacity: pressed ? 0.5 : 1 }}
                   />
                 )}
               </Pressable>
             </Link>
           ),
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerTitleAlign: "center",
         }}
       />
 
@@ -67,6 +75,10 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <AntDesign name="search1" size={24} color={color} />
           ),
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerTitleAlign: "center",
         }}
       />
 
@@ -77,8 +89,34 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => (
             <Ionicons name="library-outline" size={24} color={color} />
           ),
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerTitleAlign: "center",
         }}
       />
     </Tabs>
   );
 }
+
+const Stack = createNativeStackNavigator();
+function Navigation() {
+  return (
+    <NavigationContainer independent={true}>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Login"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Main"
+          component={TabLayout}
+          options={{ headerShown: false }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+export default Navigation;
