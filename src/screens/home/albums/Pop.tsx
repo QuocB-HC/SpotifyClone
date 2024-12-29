@@ -24,7 +24,6 @@ function Pop() {
   // Hàm fetch dữ liệu từ Firestore
   const fetchData = async () => {
     try {
-      console.log("Fetching data from Firestore...");
       const snapshot = await firestore().collection("clone").get();
       if (snapshot.empty) {
         console.log("No data found in Firestore.");
@@ -34,7 +33,7 @@ function Pop() {
           id: doc.id,
           ...doc.data(),
         })) as Track[];
-        console.log("Fetched data:", dataList);
+        // console.log("Fetched data:", dataList);
         setData(dataList);
       }
     } catch (error) {

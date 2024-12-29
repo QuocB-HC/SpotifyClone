@@ -22,7 +22,6 @@ export default function All() {
   // Hàm fetch dữ liệu từ Firestore
   const fetchData = async () => {
     try {
-      console.log("Fetching data from Firestore...");
       const snapshot = await firestore().collection("clone").get();
       if (snapshot.empty) {
         console.log("No data found in Firestore.");
@@ -32,7 +31,7 @@ export default function All() {
           id: doc.id,
           ...doc.data(),
         })) as Track[];
-        console.log("Fetched data:", dataList);
+        // console.log("Fetched data:", dataList);
         const randomTracks = getRandomTracks(dataList, 30); // Lấy ngẫu nhiên 30 bài hát
         setData(randomTracks);
       }

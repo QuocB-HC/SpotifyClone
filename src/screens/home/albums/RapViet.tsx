@@ -23,7 +23,6 @@ function RapViet() {
   // Hàm fetch dữ liệu từ Firestore
   const fetchData = async () => {
     try {
-      console.log("Fetching data from Firestore...");
       const snapshot = await firestore().collection("clone").get();
       if (snapshot.empty) {
         console.log("No data found in Firestore.");
@@ -33,7 +32,7 @@ function RapViet() {
           id: doc.id,
           ...doc.data(),
         })) as Track[];
-        console.log("Fetched data:", dataList);
+        // console.log("Fetched data:", dataList);
         setData(dataList);
       }
     } catch (error) {
@@ -70,11 +69,7 @@ function RapViet() {
             source={require("./images/Rap_Viet.png")}
             style={styles.albImg}
           />
-          <Text
-            style={styles.albTitle}
-          >
-            RAPVIET
-          </Text>
+          <Text style={styles.albTitle}>RAPVIET</Text>
         </View>
       </Pressable>
 
@@ -139,14 +134,14 @@ const styles = StyleSheet.create({
   },
   albTitle: {
     color: "white",
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginTop: 10,
     fontSize: 20,
     position: "absolute",
     left: 0,
     bottom: 10,
     borderLeftWidth: 5,
-    borderLeftColor: '#FFF4B7',
+    borderLeftColor: "#FFF4B7",
     paddingLeft: 10,
   },
   title: {

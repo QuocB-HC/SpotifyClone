@@ -4,8 +4,6 @@ import {
   TextInput,
   Text,
   StyleSheet,
-  Alert,
-  ActivityIndicator,
 } from "react-native";
 import TrackListItem from "@/src/components/TrackListItem";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -24,7 +22,6 @@ export default function SearchScreen() {
   // Hàm fetch dữ liệu từ Firestore 
   const fetchData = async () => {
     try {
-      console.log("Fetching data from Firestore...");
       const snapshot = await firestore().collection("clone").get();
       if (snapshot.empty) {
         console.log("No data found in Firestore.");
@@ -34,7 +31,7 @@ export default function SearchScreen() {
           id: doc.id,
           ...doc.data(),
         })) as Track[];
-        console.log("Fetched data:", dataList);
+        // console.log("Fetched data:", dataList);
         setData(dataList);
       }
     } catch (error) {
@@ -63,18 +60,6 @@ export default function SearchScreen() {
           item.category.trim().toLowerCase().includes(search.trim().toLowerCase())) ||
         (item.musician &&
           item.musician.trim().toLowerCase().includes(search.trim().toLowerCase()))
-
-      // (item) =>
-      //   item.name.toLowerCase().includes(search.toLowerCase()) ||
-      //   item.artists.some((artist) =>
-      //     artist.toLowerCase().includes(search.toLowerCase())
-      //   ) ||
-      //   item.category.some((category) =>
-      //     category.toLowerCase().includes(search.toLowerCase())
-      //   ) ||
-      //   item.musician.some((musician) =>
-      //     musician.toLowerCase().includes(search.toLowerCase())
-      //   )
     );
 
     setFilteredData(newData);
@@ -152,3 +137,16 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
 });
+
+
+// (item) =>
+      //   item.name.toLowerCase().includes(search.toLowerCase()) ||
+      //   item.artists.some((artist) =>
+      //     artist.toLowerCase().includes(search.toLowerCase())
+      //   ) ||
+      //   item.category.some((category) =>
+      //     category.toLowerCase().includes(search.toLowerCase())
+      //   ) ||
+      //   item.musician.some((musician) =>
+      //     musician.toLowerCase().includes(search.toLowerCase())
+      //   )

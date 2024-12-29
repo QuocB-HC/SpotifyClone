@@ -3,8 +3,6 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 import All from "@/src/screens/home/All";
 import Music from "@/src/screens/home/Music";
 import Album from "@/src/screens/home/Album";
-import { enableScreens } from "react-native-screens";
-import PlayerProvider from "@/src/providers/PlayerProvider";
 
 // enableScreens(); // Kích hoạt react-native-screens
 

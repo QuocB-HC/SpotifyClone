@@ -8,6 +8,7 @@ import HIEUTHUHAI from "./albums/HIEUTHUHAI";
 import RapViet from "./albums/RapViet";
 import Pop from "./albums/Pop";
 import Riot from "./albums/Riot";
+import TopRanking from "./albums/Top10";
 
 function AlbumScreen() {
   return (
@@ -19,8 +20,9 @@ function AlbumScreen() {
       <ScrollView
         horizontal={true}
         showsHorizontalScrollIndicator={false}
-        style={{ flexDirection: "row" }}
+        // style={{ flexDirection: "row" }}
       >
+        <TopRanking />
         <HIEUTHUHAI/>
         <RapViet/>
         <Pop/>

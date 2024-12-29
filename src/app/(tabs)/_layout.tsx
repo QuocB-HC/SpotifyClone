@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
 // import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs } from "expo-router";
-import { Pressable, View, ActivityIndicator, ToastAndroid } from "react-native";
+import {
+  Pressable,
+  View,
+  ActivityIndicator,
+  ToastAndroid,
+  Text,
+} from "react-native";
 import { Colors } from "@/src/constants/Colors";
 import { useColorScheme } from "@/src/hooks/useColorScheme";
 import AntDesign from "@expo/vector-icons/AntDesign";
@@ -22,6 +28,14 @@ import LoginScreen from "../Login";
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
 function TabLayout() {
   const colorScheme = useColorScheme();
+
+  // Cấu hình Google Sign-In
+  GoogleSignin.configure({
+    webClientId:
+      "1044632252747-2hp0ka7ofe9giln2jl1s31nm7n3j9ikc.apps.googleusercontent.com",
+  });
+
+  const userInfo = GoogleSignin.signIn();
 
   // Cấu hình Google Sign-In
   GoogleSignin.configure({
@@ -73,6 +87,11 @@ function TabLayout() {
               />
             </Pressable>
           ),
+          // headerLeft: () => (
+          //   <View>
+          //     <Text style={{ color: "white" }} >username</Text>
+          //   </View>
+          // ),
           headerStyle: {
             backgroundColor: "#090909",
           },
